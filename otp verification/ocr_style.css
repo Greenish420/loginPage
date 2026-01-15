@@ -17,6 +17,12 @@
     box-sizing: border-box;
 }
 
+/* .ocr{
+    display: flex;
+    gap :10px;
+    font-size: larger;
+} */
+
 .C_Normal{
     font-family:  "C_Normal";
 }
@@ -25,7 +31,13 @@
     font-family: "Normal";
 }
 
+a{
+    text-decoration: none;
+}
 
+a:hover{
+    text-decoration: underline;
+}
 
 body{
     overflow-x: hidden;
@@ -91,6 +103,27 @@ body > p{
 
 }
 
+.other_login{
+    font-size: large;
+    width: 8em;
+    height: 2.4em;
+    border-radius: 12px;
+    border: #F8FAFC solid;
+    border-width: 1px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.other_login:hover{
+    transform: scale(1.02); 
+}
+
 .card_body form{
     display: flex;
     justify-content: center;
@@ -139,22 +172,33 @@ body > p{
 .field{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
-.field_body{
-    font-family: Thin;
-    gap: 10px;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    background-color: #F1F5F9;
+
+.field input{
+    width: 64px;
+    height: 96px;
+
+    font-size: 2em; 
+    font-weight: bolder;
+    text-align: center;
+
+    padding: 0;
+    line-height: 5em;      
+
     box-sizing: border-box;
-    padding: 10px 15px;
-    border-radius: 12px;
-    height: 3.5em;
+    outline: none;
+
+    border-radius: 15px;
+    background: #F1F5F9;
+
+    caret-color: transparent;
 }
+
 
 
 #password::placeholder{
@@ -203,9 +247,34 @@ body > p{
     align-items: center;
     text-align: center;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+.form_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
 @media (max-height: 900px) {
    .header{
     flex-direction: row;
+   }
+
+   .header img{
+    margin-bottom: 25px;
+   }
+
+   .header div h1{
+    font-size:medium;
    }
    
    .field_body{
@@ -225,6 +294,14 @@ body > p{
 
 
 @media (max-width: 600px) {
+
+    .field{
+        gap: 5px;
+    }
+    .field input{
+        width: 48px;
+        height: 64px;
+    }
    .card_body{
     width: 24em;
    }
@@ -244,6 +321,15 @@ body > p{
 
 @media (max-width: 450px){
 
+    .field{
+        gap: 10px;
+    }
+    .field input{
+        border-radius: 10px;
+        width: 40px;
+        height: 60px;
+       
+    }
     
     .header img{
         display: block;
@@ -284,6 +370,19 @@ body > p{
 
     .header{
         display: none;
+    }
+    .footer{
+        display: none;
+    }
+
+    .field{
+        gap: 6px;
+    }
+    .field input{
+        border-radius: 10px;
+        width: 40px;
+        height: 58.1px;
+       
     }
 
     .form_header{

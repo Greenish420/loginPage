@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="LI_style.css">
+<link rel="stylesheet" href="font_face.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    
+    <div class="card">
+        <div class="header">
+          <img  style="width: fit-content; height: fit-content; position: relative; top: 30px;" src="assests/images/log in icon.svg" alt="an icon of a person">
+          <div >
+
+          <h1  class="C_Normal">تسجيل الدخول</h1>
+          <p class="Normal" style="color: #64748B; margin-bottom: 15px;">مرحباً بعودتك! يرجى إدخال بياناتك</p>
+
+          </div>
+        </div>
+        
+        
+        <div class="card_body" style="text-align: right;" >
+          <form action="" style="padding: 25px;">
+
+              <div class="form_header">
+                <img  style="width: fit-content; height: fit-content; position: relative; top: 30px;" src="assests/images/log in icon.svg" alt="an icon of a person">
+                <h1  class="C_Normal">تسجيل الدخول</h1>
+              </div>
+
+              
+                
+                  <div class="field">
+                   <label for="" style="display: block;">البريد الالكتروني</label>
+                  <div class= "field_body" >
+                    <input type="email"  placeholder="example@mail.com"  class="C_Normal">
+                    <img src="assests/images/mail.svg" alt="" style = "">
+                  </div>
+                 </div>
+
+                  <div class="field">
+                   <label for="" style="display: block;">كلمة المرور</label>
+                  <div class= "field_body" >
+                   <button class="eye_btn" onclick="ToggleText()"> <img src="assests/images/eye.svg" alt="" style = ""> </button> 
+                    <input type="password" id="password" placeholder="كلمة المرور"  class="C_Normal">
+                    <img src="assests/images/lock.svg" alt="" style = "">
+                  </div>
+                 </div>
+
+                 <div style="display: flex; justify-content: start; width: 100%">
+                  <p style=""><a href="" style="color: #2563EB;">هل نسيت كلمة المرور؟</a></p>
+                 </div>
+                
+
+                <button class="submit_btn C_Normal"> <img src="assests/images/arrow.svg" alt="an icon of an arrow pointing to the right">تسجيل الدخول</button>
+
+
+                <div class="form_footer">
+                  <p style="color: #94A3B8;">أو عبر الدخول</p>
+
+                  <div style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 10px; height: fit-content;"><button class="other_login C_Normal">آبل <img src="assests/images/Apple icon.svg" alt=""></button><button class="other_login C_Normal">جوجل<img src="assests/images/Google icon.svg" alt=""></button></div>
+
+                  <p style="margin-top: 15px;">ليس لديك حساب؟ <span class="login_link"><a href="">سجل الآن</a></span></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
