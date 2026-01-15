@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Bolder";
+    src: url(assests/fonts/Tajawal/Tajawal-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Bold";
+    src: url(assests/fonts/Tajawal/Tajawal-Bold.ttf);
+}
+@font-face {
+    font-family: "Normal";
+    src: url(assests/fonts/Tajawal/Tajawal-Regular.ttf);
+}
+@font-face {
+    font-family: "Thin";
+    src: url(assests/fonts/Tajawal/Tajawal-Light.ttf);
+}
+@font-face {
+    font-family: "C_Bolder";
+    src: url(assests/fonts/Cario/Cairo-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "C_Bold";
+    src: url(assests/fonts/Cario/Cairo-Bold.ttf);
+}
+@font-face {
+    font-family: "C_Normal";
+    src: url(assests/fonts/Cario/Cairo-Regular.ttf);
+}

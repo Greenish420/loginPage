@@ -1,0 +1,321 @@
+:root{
+    --color1 : #EEF0FD;
+    --color2 : #BDC8F6;
+    --color3 : #889FF0;
+    --color4 : #4978E8;
+    --color5 : #2D56AF;
+    --color6 : #1A3673;
+    --color7 : #09193C;
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.C_Normal{
+    font-family:  "C_Normal";
+}
+
+.Normal{
+    font-family: "Normal";
+}
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+    background-color: var(--color1);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > p{
+    font-family: "Normal";
+}
+
+.card{
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.card_body{
+    width : 33em;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: white;
+    font-family: Normal;
+}
+
+.card_body button{
+    cursor: pointer;
+}
+
+.submit_btn{
+    font-size: large;
+    width: 100%;
+    height: 3.6em;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    background: #2563EB;
+    box-shadow: 0px 5px 10px var(--color4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.submit_btn:hover{
+    transform: scale(1.02); 
+    box-shadow: 0px 5px 25px var(--color3);
+
+}
+
+.card_body form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+
+.card_body form p span a{
+    font-size: small;
+    color: #2D56AF;
+    text-decoration: none;
+}
+
+.card_body form p {
+    display: inline;
+}
+
+.card_body form input {
+    display: inline;
+    
+}
+
+.card_body form input:hover{
+    cursor: text;
+    
+}
+
+.card_body form input::placeholder{
+    color: #94A3B8
+    
+}
+
+
+.card_body input{
+    border: none;
+    background-color: transparent;
+    
+}
+
+.field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.field_body{
+    font-family: Thin;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #F1F5F9;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 12px;
+    height: 3.5em;
+}
+
+
+#password::placeholder{
+  font-size: large;
+}
+#password_vir::placeholder{
+  font-size: large;
+}
+
+.field_body button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field_body input{
+    font-size: large;
+    display: flex;
+    gap: 10px;
+    direction: rtl;
+    flex-grow: 1;
+}
+.field_body input:focus{
+    outline: none;
+}
+.eye_btn{
+   background-color: transparent;
+   border : none;
+}
+
+.login_link a{
+    color: var(--color5);
+    text-decoration: none;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.login_link a:hover{
+    text-decoration: underline;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media (max-height: 900px) {
+   .header{
+    flex-direction: row;
+   }
+
+   .field_body{
+    height: 2.5em;
+   }
+
+   .card_body form{
+    gap :5px;
+   }
+
+   .submit_btn{
+    height: 2.5em;
+   }
+}
+
+
+
+
+@media (max-width: 600px) {
+   .card_body{
+    width: 24em;
+   }
+
+   .header{
+    font-size: medium;
+    gap: 0;
+   }
+
+   .header img{
+    transform: scale(0.8);
+   }
+
+  
+
+}
+
+@media (max-width: 420px){
+
+    .header{
+        flex-direction: column;
+    }
+
+    .header img{
+        display: none;
+    }
+
+    .card_body{
+    width: 20em;
+   }
+
+   .header{
+    font-size: small;
+    gap: 0;
+   }
+
+   .header h1{
+    font-size: medium;
+   }
+
+   .card_body form input{
+    font-size: small;
+   }
+
+   #password::placeholder{
+    font-size: small;
+   }
+
+   #password_vir::placeholder{
+    font-size: small;
+   }
+
+   .submit_btn{
+    font-size: small;
+   }
+}
+
+@media (max-width: 380px) {
+
+    .header{
+        display: none;
+    }
+    *{
+        font-size: small;
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+   .card_body{
+    
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+   }
+
+   .card_body form{
+    width: 100vw;
+    height: 100vh;
+   }
+
+   .card_body form input{
+    font-size: small;
+   }
+
+   #password::placeholder{
+    font-size: small;
+   }
+
+   #password_vir::placeholder{
+    font-size: small;
+   }
+
+}
