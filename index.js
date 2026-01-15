@@ -15,5 +15,5 @@ function ToggleText(){
 }
 
 function ToggleTextVir(){
-    passwordInputVir.type = passwordInputVir.type == "passwrod" ? "text" : "password";
+    passwordInputVir.type = passwordInputVir.type == "password" ? "text" : "password";
 }
