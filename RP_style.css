@@ -25,6 +25,8 @@
     font-family: "Normal";
 }
 
+
+
 body{
     overflow-x: hidden;
     overflow-y: hidden;
@@ -94,7 +96,7 @@ body > p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     text-align: right;
 }
 
@@ -123,6 +125,10 @@ body > p{
     
 }
 
+.form_header{
+    display: none;
+   
+}
 
 .card_body input{
     border: none;
@@ -201,7 +207,7 @@ body > p{
    .header{
     flex-direction: row;
    }
-
+   
    .field_body{
     height: 2.5em;
    }
@@ -236,14 +242,12 @@ body > p{
 
 }
 
-@media (max-width: 420px){
+@media (max-width: 450px){
 
-    .header{
-        flex-direction: column;
-    }
-
+    
     .header img{
-        display: none;
+        display: block;
+        transform: scale(0.7);
     }
 
     .card_body{
@@ -280,6 +284,15 @@ body > p{
 
     .header{
         display: none;
+    }
+
+    .form_header{
+         display: flex;
+         flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
     }
     *{
         font-size: small;
