@@ -35,7 +35,7 @@ a:hover{
 
 body{
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     padding: 0;
     background-color: var(--color1);
     width: 100vw;
@@ -97,6 +97,11 @@ body > p{
 
 }
 
+.submit_btn:active{
+    transform: scale(0.98);
+    background-color: #1a52cb;
+}
+
 .other_login{
     font-size: large;
     width: 8em;
@@ -116,6 +121,12 @@ body > p{
 
 .other_login:hover{
     transform: scale(1.02); 
+}
+
+.other_login:active{
+
+    background-color: rgb(154, 154, 154);
+    transform: scale(0.98);
 }
 
 .card_body form{

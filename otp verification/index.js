@@ -34,3 +34,22 @@ inputs.forEach((input, index) => {
     inputs[Math.min(paste.length, inputs.length) - 1].focus();
   });
 });
+
+
+let timeLeft = 60;
+const timerDisplay = document.getElementById("timer");
+
+const countdown = setInterval(() => {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    timerDisplay.textContent = `${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
+    if (timeLeft === 0) {
+        clearInterval(countdown);
+        timesUp();
+    }
+    timeLeft--;
+}, 1000);
+
+function timesUp() {
+    alert("Time's up!");
+}
